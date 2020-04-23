@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>Sign-Up Validation</title>
+  </head>
+  <body>
+    <header class="text-center bg-success py-3 text-white">
+      <h1>Form Validation Page</h1>
+    </header>
+
+<div class="conatiner mt-5">
+  <div class="row">
+    <div class="col-md-6 mx-auto">   
+      <h3 class="text-center">Sign-Up Here</h3>  
+      <form>
+        <div class="form-group">
+          <label class="text-success">Title</label>
+            <input type="text" id="title" placeholder="Title" class="form-control">
+            <div class="invalid-feedback">
+              Title must be between 2 and 9 characters
+            </div>
+        </div>
+
+        <div class="form-group">
+          <label class="text-success">Surname</label>
+            <input type="text" id="surname" placeholder="Surname" class="form-control">
+            <div class="invalid-feedback">
+              Surname must be between 2 and 10 characters
+            </div>
+        </div>
+        <div class="form-group">
+          <label class="text-success">Last Name</label>
+            <input type="text" id="lastname" placeholder="Last name" class="form-control">
+            <div class="invalid-feedback">
+              Last Name must be between 3 and 15 characters
+            </div>
+        </div>
+        <div class="form-group">
+          <label class="text-success">Email Address</label>
+            <input type="text" id="email" placeholder="Email" class="form-control">
+            <div class="invalid-feedback">
+              Please email a valid email 
+            </div>
+        </div>
+        <div class="form-group">
+          <label class="text-success"> Phone Number</label>
+            <input type="text" id="phone" placeholder="phone number" class="form-control">
+            <div class="invalid-feedback">
+              Please, enter a valid Phone number and it must start with +234
+            </div>
+        </div>
+        <div class="form-group">
+          <label class="text-success">Password</label>
+            <input type="text" id="password" placeholder="Password" class="form-control">
+            <div class="invalid-feedback">
+              Please enter an at least 7 alphanumeric characters with an uppercase.
+            </div>
+        </div>
+
+  <input type="Submit" class="btn btn-success btn-block" value="Submit">
+
+      </form>   
+     
+   </div>
+  </div>
+</div>
+
+<footer>
+  <div class="conatiner mt-5 py-3 text-white    text-center bg-success">
+    <h5>      Copyright &copy; Gbadamosi 2020 </h5>
+  </div>
+</footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

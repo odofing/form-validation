@@ -1,0 +1,198 @@
+/Hello/i
+
+(i makes it can insensitive)
+
+--------------------------------------------
+
+.test() amd then pass an arguement into the parenthesis.
+
+IT MAKES YOU FIND A IN A STRING
+------------------------------------------------------
+(A|B)
+slash bar means "or".
+------------------------------------------------
+.match()
+MAKES YOU FIND IF SOMETHING that MATCHES SOMETHING IN A STRING
+
+---------------------------------------------------
+(.) dot
+a wldcard for mactch of one character. it enables you add any character f yur choice.
+
+e.g h.llo ==> hello will work but heello wont because of two EEs
+-------------------------------------------------------
+(*)
+enables you to add multi characters or zero characters unlike the (.) 
+
+----------------------------------------------------
+(?)
+it means a character is optional. eg /gre?a?y/. e and a are optional characters.
+
+
+----------------------------------------------------------------------
+
+[]
+
+must be this or that. eg, /gr[ae]y/ or /[gr]ay/. it could be grey/ray or /gay/gray.
+
+----------------------------------------------------
+
+
+(^)
+it means 'start with'.
+e.g (^h) h must start the string.
+
+
+-----------------------------------------------
+[^]
+ must not be something.
+whatever is the [] must not be included in the string. e.g. /[^GR]ray/ will output ray plus whatever character placed before letter R but it must not be G or R or both.
+
+------------------------------------------------------
+
+difference between /^[GR]ray/ and /[^GR]ray/.
+
+When ^ is outside, it means that GR must be in the string while when it is inside, GR must not be in the string.
+
+----------------------------------------------------------------
+/[A-Z]ray/
+this matches any uppercase letters between A-Z.
+-------------------------------------------------------------------------------------
+
+
+/[a-z]ray/
+this matches any lowercase letters between a-z.
+
+-----------------------------------------------------------------
+/[A-Za-z]ray
+
+matches all uppercase and lowercase letters
+.................................................................................
+
+/[0-9]ray/
+
+matches all numbers between 0-9.
+
+
+-----------------------------------------------
+
+match()
+returns ndex of the first match if not found, retrns -1
+
+--------------------------------------------------------
+replace()
+
+replaces something in a string.
+
+--------------------------------------------
+QUNATIFIERS {}
+/Hel{5}o/ 
+
+this will output "HeLLLLLo" with 5Ls. it targets the letter before the curlybraces which is L in this case. also, it must be exact number in the braces. Hello with 4Ls or 6Ls will throw an error.
+
+----------------------------------------------------------------
+QUNATIFIER RANGES {}
+
+/Hel{2, 5}o/
+
+this means that the number of L in the string must not be less than 2 or more than 5.
+
+----------------------------------------------------------
+QUNATIFIER RANGES {}
+
+/Hel{5,}o/
+
+this means that Ls in the string must not be less than 2, it could be a million Ls.
+
+---------------------------------------------
+
+Grouping with parenthesis ().
+
+/([0-9]x){3}/
+
+this will output  a number plus x for at least three times.
+
+--------------------------------------------
+($)
+it means 'ends with'.
+e.g (hello$) $ must end the string
+
+
+------------------------------------------------------
+(^hello$)
+must start and ends with hello
+
+
+
+
+----------------------------------------------
+
+(-), [a-e].
+e.g (a-e) searches for characters between a to e. 
+
+
+----------------------------------------------------------------
+
+SHORTHAND CHATACTER CLASSES
+
+/ \w/
+word character which takes alphanumeric or _. e.g 3, a, 0,z etc.
+
+------------------------------------------------------------
+/ \W/
+
+this is non-word character with capital w. it takes everthing (including space) except numbers and letters.
+
+------------------------------------------------
+/ \d/
+
+matches any digit.
+-----------------------------------------
+
+/ \d+/
+matches two ormore digits
+
+
+----------------------------------------------------
+/ \D/
+
+matches non-digits
+-------------------------------------------------------
+
+/ \s/
+
+whitespace
+it matches spaces ONLY. it could be spacebar or tab.
+
+---------------------------------------------------------------------
+/ \S/
+
+non-whitespace
+it does not match tabs or spaces. it takes alphanumeric ONLY.
+
+-----------------------------------------------
+
+WORD BOUNDARY (\b)
+
+it negates whatever is attached to a word and output the wrapped word-boundary. eg Alansmith is home now.  /Alan\b/ will output Alan is home now, ignorng smith.
+
+
+-------------------------------------------------------------------
+/ \w+/
+takes one or more word character. e.g 3x, g6, 9j etc
+............................................................................
+
+ASSERTIONS
+
+/X(?=Y)/
+
+This matches only if X is followed by Y
+e.g, kjwfauowf87XYkjoijiijklkj will match but giyiytuugyxjhjhj will not.
+
+--------------------------------------------------------------------------------------
+/X(?!Y)/
+
+This matches only if X is  not followed by Y
+
+e.g, kjwfauowf87XYkjoijiijklkj will  not match but giyiytuugyxjhjhj will match.
+
+
